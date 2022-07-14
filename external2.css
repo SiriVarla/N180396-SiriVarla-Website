@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: purple;
+    /*linear-gradient(to right,#76bee3,#d94ff3)*/
+}
+.p{
+    margin-top:8%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 165px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main{
+    margin-left: 36%;
+    background-color:aliceblue;
+    width: 430px;
+    height: 600px;
+    border-radius: 18px;
+    box-shadow: 0px 8px 8px 0px rgba(128, 128, 128, 0.949);
+}
+.p1{
+    padding-top: 20px;
+    padding-left:39px;
+    padding-bottom: 10px;
+    font-size:18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.p2{
+    opacity: 0.7;
+    padding-top: 20px;
+    padding-left:200px;
+    padding-bottom:30px;
+    font-size:18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cd input[type="text"]{
+    border: none;
+    border-bottom: 1px solid;
+    outline:none;
+    background-color: aliceblue;
+}
+.cd input[type="password"]{
+    border: none;
+    border-bottom: 1px solid;
+    outline:none;
+    background-color: aliceblue;
+}
+#p3{
+    position: relative;
+    left:320px;
+}
+#text{
+    height:35px;
+    width: 300px;
+    margin-left:7%;
+}
+
+#password{
+    height:35px;
+    width: 300px;
+    margin-left:7%;
+}
+
+#button{
+    width:300px;
+    height:35px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: violet;
+    border: none;
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 48px;
+}
+#cg{
+    padding-top:50px;
+    margin-left:33%;
+    font-size:35px;
+    color: rgba(0, 0, 255, 0.905);
+}
+#cg2{
+    margin-left:5%;
+    font-size:35px;
+}
+#cg3{
+    margin-left:5%;
+    font-size:35px;
+    color:darkgoldenrod;
+}
+.p5{
+    padding-left:140px;
+    padding-top: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    opacity: 0.7;
+}
+.p6{
+    padding-left:160px;
+    padding-top: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    opacity: 0.7;
+}
+.b{
+    margin-top: 3.5%;
+    margin-left:45%;
+}
+.a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #d94ff3;
+}

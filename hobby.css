@@ -1,0 +1,22 @@
+div{
+	margin-bottom: 10px;
+	background-color: peachpuff;
+	width: 500px;
+}
+button
+{
+	margin-left: 50px;
+}
+ul li
+{
+	list-style: none;
+	background-color:ghostwhite;
+}
+.delete
+{
+	background-color:green;
+}
+button:hover
+{
+	background-color: red;
+}

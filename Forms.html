@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORMS</title>
+	<style type="text/css">
+		div{
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+			width: 500px;
+			height: 500px;
+			background-color: yellow;
+		}
+	</style>
+	<script type="text/javascript">
+		function validate()
+		{
+			var fn=document.getElementById("first").value;
+			var ln=document.getElementById("last").value;
+			var mn=/^[a-z,A-z]$/
+			var india=/^[0-9]{10}$/
+			var usa=/^[0-9]{3}\-[0-9]{3}\-[0-9]{4}$/
+			var p=pw.length<7
+			var c1=document.getElementById('h1').checked;
+   			var c2=document.getElementById('h2').checked;
+    		var c3=document.getElementById('h3').checked;
+    		var c4=document.getElementById('h4').checked;
+    		var q=document.getElementById('a').checked;
+    		var e=/^[a-z,A-Z,0-9][a-z,A-Z,0-9]*\@[a-z,A-Z]{5}\.[a-z,A-Z]{2,3}$/
+    		var s=document.getElementById("submit");
+			if(fn.length<4 || ln.length<4 || mn.test(middle) || india.test(i) || usa.test(u) || p.test(pw))
+			{
+				return false;
+			}
+			if(!c1&!c2 || !c2&!c3 || !c3&!c1)
+			{
+				return false;
+			}
+			if(e.test("email"))
+			{
+				return false;
+			}
+			if(q.test(a))
+			{
+				return true;
+			}
+		}
+		function sp(){
+			var s=document.getElementById("p").checked;
+			if(s)
+			{
+				document.getElementById("pw").type="text";
+			}
+			else
+			{
+				document.getElementById("pw").type="password";
+			}
+		}
+		function display() {
+			var v=document.getElementById("body").value;
+			document.getElementById("p").innerHTML=v;
+		}
+		function confirm(){
+			var c=confirm("Do you want to confirm");
+		}
+	</script>
+</head>
+<body id="body" style="background-color: aliceblue;">
+	<center>
+		<h1 style="color: orangered;">REGISTRATION FORM</h1>
+		<div>
+			<form action="/siri.php" method="post" onsubmit="return validate()">
+				<table>
+					<tr>
+						<td><b>FIRST NAME:</b></td>
+						<td><input type="text" id="first" required placeholder="First Name"></td>
+					</tr>
+					<tr>
+						<td><b>MIDDLE NAME:</b></td>
+						<td><input type="text" name="n" id="middle" placeholder="Middle Name"></td>
+					</tr>
+					<tr>
+						<td><b>LAST NAME:</b></td>
+						<td><input type="text" name="n" id="last" required placeholder="Last Name"></td>
+					</tr>
+					<tr>
+						<td><b>EMAIL:</b></td>
+						<td><input type="email" id="email" placeholder="Email" required></td>
+					</tr>
+					<tr>
+						<td><b>PASSWORD:</b></td>
+						<td><input type="password" id="pw" placeholder="Password" required></td>
+					</tr>
+					<tr>
+						<td><b>SHOW PASSWORD:</b></td>
+						<td><input type="checkbox" id="p" onclick="sp();"></td>
+					</tr>
+					<tr>
+						<td id="num"><b>MOBILE:</b></td>
+						<td><select name="list"><option id="i">IND</option><option id="u">USA</option></select><input type="number" id="phn" required placeholder="Mobile Number"></td>
+					</tr>	
+					<tr>
+						<td><b>HOBBIES:</b></td>
+						<td>Studying<input type="checkbox"id="h1">Playing<input type="checkbox" id="h2">Coding<input type="checkbox" id="h3">Sleeping<input type="checkbox" id="h4"></td>
+					</tr>
+					<tr>
+						<td><b>DATE OF BIRTH:</b></td>
+						<td><input type="date" name="d" id="date"></td>
+					</tr>
+					<tr>
+						<td><b>ADDRESS:</b></td>
+						<td><input type="address" name="address"></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="t" id="a" required></td><td style="font-size: 20px;">I agree the terms and conditions of the company</td>
+					</tr>
+					<tr>
+						<td id="pic"><b>UPLOAD PHOTO:</b></td>
+						<td><input type="file" id="file" name="photo" accept="image/*" size="<50kb" required></td>
+					</tr>
+					<tr>
+						<td colspan="3"><input type="submit" value="submit" id="submit"><input type="reset" value="reset"></td>
+					</tr>
+				</table>
+			</form>
+			</div>
+		<center>
+		<p id="p"><b>DISPLAYED TEXT HERE</b></p>
+		<script type="text/javascript">
+			var k=document.getElementById("body");
+			k.addEventListener('keyup',display);
+			m.addEventListener('click',confirm);
+		</script>
+</body>
+</html>
